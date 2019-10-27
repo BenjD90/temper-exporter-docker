@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@neo9/n9-node-log": "^2.6.0",
+    "@promster/server": "^3.4.1",
+    "lodash": "^4.17.15",
+    "prom-client": "^11.5.3",
+    "temper-usb": "^0.1.0"
+  }
+}
