@@ -19,4 +19,6 @@ Configuration with environment variables :
 - NB_MEASURE : number of measure for one measure (default 100)
 - DISABLE_TRACE : if no empty, do not log every measure (default `empty`)
 - PORT : HTTP port for metrics (default to 9100)
-- REFRESH_RATE : Duration in ms to wait between every measure (dafault to 5000 ms)
+- REFRESH_RATE : Duration in ms to wait between every measure (default to 5000 ms)
+- TEMP_UNIT : 0 to Celcius, 1 to Fahrenheit (default to 0, Celcius)
+- TEMP_OFFSET : Offset to add or remove to measure (default to 0)
