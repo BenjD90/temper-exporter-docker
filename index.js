@@ -27,7 +27,7 @@ const refreshTemp = async () => {
     const temps = [];
     for(let i = 0; i < Math.max(nbMeasure, 1); i++) {
       const temp = await td.getTemperature();
-      temps.push(temp.data[process.env.TEMP_UNIT || 0] + process.env.TEMP_OFFSET);
+      temps.push(temp.data[process.env.TEMP_UNIT || 0] + (process.env.TEMP_OFFSET || 0));
     }
     const avg = _.sum(temps)/_.size(temps);
     const min = _.min(temps);
